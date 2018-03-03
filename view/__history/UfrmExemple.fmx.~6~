@@ -1,0 +1,111 @@
+inherited FrmExemple: TFrmExemple
+  Caption = 'FrmBase1'
+  DesignerMasterStyle = 0
+  inherited BgAll: TRectangle
+    inherited LayAll: TLayout
+      inherited LayCenter: TLayout
+        inherited LayCenterBack: TLayout
+          inherited LayAdd: TLayout
+            inherited CircleADD: TCircle
+              inherited TextAdd: TText
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+          object RoundRect1: TRoundRect
+            Align = Top
+            Fill.Color = claNull
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 55.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCadetblue
+            object Text4: TText
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 34.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Show Toast'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = claCadetblue
+              OnClick = Text4Click
+            end
+          end
+          object RoundRect2: TRoundRect
+            Align = Top
+            Fill.Color = claNull
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 153.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCadetblue
+            object Edit1: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 3.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Margins.Bottom = 3.000000000000000000
+              Size.Width = 280.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              object Text5: TText
+                Align = Client
+                Margins.Left = 5.000000000000000000
+                Size.Width = 275.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Click - Me'
+                TextSettings.HorzAlign = Leading
+                OnClick = Efect
+              end
+            end
+          end
+          object RoundRect3: TRoundRect
+            Align = Top
+            Fill.Color = claNull
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 99.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = claCadetblue
+            object Text6: TText
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 34.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Show Toast'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.FontColor = claCadetblue
+              OnClick = Text6Click
+            end
+          end
+        end
+      end
+      inherited MultiViewMenu: TMultiView
+        Size.Width = 250.000000000000000000
+        Size.Height = 380.000000000000000000
+      end
+    end
+    inherited LayLoad: TLayout
+      inherited LayLoads: TLayout
+        inherited ArcLoad: TArc
+          EndAngle = -90.000000000000000000
+        end
+      end
+    end
+  end
+end

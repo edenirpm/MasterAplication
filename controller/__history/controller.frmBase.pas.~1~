@@ -1,0 +1,31 @@
+unit controller.frmBase;
+
+interface
+uses
+ UInterfaces,model.observer;
+Type
+TControllerFrmBase = class
+  private
+    FObserver: IObserver;
+    procedure SetObserver(const Value: IObserver);
+  public
+  property Observer : IObserver read FObserver write SetObserver;
+  constructor create;
+end;
+
+implementation
+
+{ TControllerFrmBase }
+
+constructor TControllerFrmBase.create;
+begin
+FObserver:=TObserver.create;
+end;
+
+
+procedure TControllerFrmBase.SetObserver(const Value: IObserver);
+begin
+  FObserver := Value;
+end;
+
+end.

@@ -1,0 +1,60 @@
+unit model.observer;
+
+interface
+uses
+ UInterfaces,System.generics.collections;
+Type
+TObserver = class(TInterfacedObject,IObserver)
+  private
+    FListObservables: TList<IObserver>;
+    procedure SetListObservables(const Value: TList<IObserver>);
+  public
+    procedure Add(Observable: IObservable);
+    procedure Notify;
+    procedure Remove(Observable: IObservable);
+    constructor create;
+    destructor destroy;override;
+    property ListObservables:TList<IObserver> read FListObservables write SetListObservables;
+end;
+
+implementation
+
+{ TObserver }
+
+procedure TObserver.Add(Observable: IObservable);
+begin
+FListObservables.Add(Observable);
+end;
+
+constructor TObserver.create;
+begin
+ FListObservables:= TList<IObserver>.Create;
+end;
+
+destructor TObserver.destroy;
+begin
+FListObservables.Free;
+  inherited;
+end;
+
+procedure TObserver.Notify;
+ var
+ Observable:IObservable;
+begin
+ for Observable in FListObservables do
+ begin
+   Observable.UpdateView;
+ end;
+end;
+
+procedure TObserver.Remove(Observable: IObservable);
+begin
+FListObservables.Remove(Observable);
+end;
+
+procedure TObserver.SetListObservables(const Value: TList<IObserver>);
+begin
+  FListObservables := Value;
+end;
+
+end.

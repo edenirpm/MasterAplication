@@ -1,0 +1,12 @@
+unit UInterfaces;
+
+interface
+Type
+IWork = interface
+  ['{8209DA24-F43D-4FD6-9560-1FE02CF26084}']
+  procedure Execute;
+end;
+
+implementation
+
+end.

@@ -1,0 +1,22 @@
+unit model.EfectTextUP;
+
+interface
+uses
+Fmx.Objects, FMX.Edit, FMX.Ani,UInterfaces;
+type
+TEfectTextUP = class(TInterfacedObject,IEfect)
+  procedure EfectTextEdit(AObject:TObject);
+end;
+
+implementation
+
+{ TEfectLabelsTextUP }
+
+procedure TEfectTextUP.EfectTextEdit(AObject: TObject);
+begin
+TAnimator.AnimateFloat((AObject as TText), 'Position.Y', -20,0.50);
+//(AObject as TText).AnimateFloat('Position.Y',-20,0.30);IsDeprecated
+((AObject as TText).Parent as TEdit).SetFocus;
+end;
+
+end.
