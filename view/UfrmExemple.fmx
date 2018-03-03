@@ -8,7 +8,7 @@ inherited FrmExemple: TFrmExemple
           inherited LaySubTitle: TLayout
             inherited BgSubTitle: TRectangle
               inherited Text2: TText
-                Text = 'Exemple of Inherited Form'
+                Text = 'Sample of Inherited Form'
               end
             end
           end
@@ -106,13 +106,6 @@ inherited FrmExemple: TFrmExemple
       inherited MultiViewMenu: TMultiView
         Size.Width = 250.000000000000000000
         Size.Height = 380.000000000000000000
-      end
-    end
-    inherited LayLoad: TLayout
-      inherited LayLoads: TLayout
-        inherited ArcLoad: TArc
-          EndAngle = -90.000000000000000000
-        end
       end
     end
   end
