@@ -24,6 +24,6 @@
     <Transaction>2018/03/03 05:27:40.000.180,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\controller\controller.frmExemple.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5" Android=""/>
+		<NoProfile iOSSimulator="iPhone5" Android="0123456789ABCDEF"/>
 	</ActiveMobileDevice>
 </BorlandProject>
