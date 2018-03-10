@@ -2,28 +2,28 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2018/03/03 01:29:23.000.734,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
-    <Transaction>2018/03/03 01:30:32.000.237,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmBase.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
-    <Transaction>2018/03/03 01:30:32.000.237,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmBase.fmx=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
-    <Transaction>2018/03/03 01:30:46.000.013,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\PrjBase.dproj=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2018/03/03 01:30:32.000.237,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmBase.pas</Transaction>
+    <Transaction>2018/03/03 01:30:32.000.237,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Unit3.fmx=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmBase.fmx</Transaction>
+    <Transaction>2018/03/03 01:30:46.000.013,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\PrjBase.dproj</Transaction>
     <Transaction>2018/03/03 02:12:06.000.219,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 02:13:19.000.985,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\interfaces\UInterfaces.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
+    <Transaction>2018/03/03 02:13:19.000.985,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\interfaces\UInterfaces.pas</Transaction>
     <Transaction>2018/03/03 02:20:58.000.159,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 02:22:48.000.175,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\model\model.work.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
+    <Transaction>2018/03/03 02:22:48.000.175,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\model\model.work.pas</Transaction>
     <Transaction>2018/03/03 02:42:45.000.492,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 02:47:45.000.583,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\model\model.observer.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
+    <Transaction>2018/03/03 02:47:45.000.583,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\model\model.observer.pas</Transaction>
     <Transaction>2018/03/03 02:54:07.000.748,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 03:02:13.000.942,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\controller\controller.frmBase.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 03:24:19.000.136,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\components\Androidapi.JNI.Toast.pas</Transaction>
+    <Transaction>2018/03/03 03:02:13.000.942,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\controller\controller.frmBase.pas</Transaction>
     <Transaction>2018/03/03 03:24:19.000.165,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\components\UWhatsApp.pas</Transaction>
+    <Transaction>2018/03/03 03:24:19.000.136,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\components\Androidapi.JNI.Toast.pas</Transaction>
     <Transaction>2018/03/03 05:02:46.000.765,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 05:05:09.000.719,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\model\model.EfectTextUP.pas</Transaction>
+    <Transaction>2018/03/03 05:05:09.000.719,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\model\model.EfectTextUP.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
     <Transaction>2018/03/03 05:12:06.000.768,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 05:13:17.000.765,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.fmx=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmExemple.fmx</Transaction>
-    <Transaction>2018/03/03 05:13:17.000.765,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmExemple.pas</Transaction>
+    <Transaction>2018/03/03 05:13:17.000.765,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmExemple.fmx=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.fmx</Transaction>
+    <Transaction>2018/03/03 05:13:17.000.765,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\view\UfrmExemple.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
     <Transaction>2018/03/03 05:25:53.000.889,=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
-    <Transaction>2018/03/03 05:27:40.000.180,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\controller\controller.frmExemple.pas</Transaction>
+    <Transaction>2018/03/03 05:27:40.000.180,C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\controller\controller.frmExemple.pas=C:\Users\MAC\Documents\Embarcadero\Studio\Projects\FinalPrjBase\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5" Android="LGK430DEEMMJN7"/>
+		<NoProfile iOSSimulator="iPhone5" Android=""/>
 	</ActiveMobileDevice>
 </BorlandProject>
