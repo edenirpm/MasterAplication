@@ -10,7 +10,9 @@ object FrmBase: TFrmBase
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  DesignerMasterStyle = 0
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 3
   object BgAll: TRectangle
     Align = Client
     Fill.Color = claWhite
@@ -26,25 +28,29 @@ object FrmBase: TFrmBase
       object LayTop: TLayout
         Align = Top
         Size.Width = 320.000000000000000000
-        Size.Height = 50.000000000000000000
+        Size.Height = 70.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object BGTop: TRectangle
           Align = Client
           Fill.Color = xFF50A4FE
           Size.Width = 320.000000000000000000
-          Size.Height = 50.000000000000000000
+          Size.Height = 70.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           object LayBtnMenu: TLayout
             Align = Right
             Position.X = 270.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 70.000000000000000000
+            Size.PlatformDefault = False
             TabOrder = 0
             object BtnMenu: TButton
-              Align = Client
+              Align = Center
               IconTintColor = claWhite
-              Size.Width = 50.000000000000000000
-              Size.Height = 50.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Size.Width = 48.000000000000000000
+              Size.Height = 48.000000000000000000
               Size.PlatformDefault = False
               StyleLookup = 'drawertoolbutton'
               TabOrder = 0
@@ -53,16 +59,22 @@ object FrmBase: TFrmBase
           end
           object LayLogo: TLayout
             Align = Left
+            Margins.Top = 20.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
             TabOrder = 1
           end
           object LayTittle: TLayout
             Align = Client
             Size.Width = 220.000000000000000000
-            Size.Height = 50.000000000000000000
+            Size.Height = 70.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 2
             object TextTitle: TText
               Align = Client
+              Margins.Top = 20.000000000000000000
               Size.Width = 220.000000000000000000
               Size.Height = 50.000000000000000000
               Size.PlatformDefault = False
@@ -107,13 +119,13 @@ object FrmBase: TFrmBase
       object LayCenter: TLayout
         Align = Client
         Size.Width = 320.000000000000000000
-        Size.Height = 398.000000000000000000
+        Size.Height = 378.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         object LayCenterBack: TLayout
           Align = Client
           Size.Width = 320.000000000000000000
-          Size.Height = 398.000000000000000000
+          Size.Height = 378.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           object LaySubTitle: TLayout
@@ -144,7 +156,7 @@ object FrmBase: TFrmBase
           object LayAdd: TLayout
             Align = Bottom
             Margins.Bottom = 20.000000000000000000
-            Position.Y = 328.000000000000000000
+            Position.Y = 308.000000000000000000
             Size.Width = 320.000000000000000000
             Size.Height = 50.000000000000000000
             Size.PlatformDefault = False
@@ -197,7 +209,7 @@ object FrmBase: TFrmBase
       object BgLoad: TRectangle
         Align = Client
         Fill.Color = claBlack
-        Opacity = 0.800000011920928900
+        Opacity = 0.800000011920929000
         Size.Width = 320.000000000000000000
         Size.Height = 480.000000000000000000
         Size.PlatformDefault = False
@@ -217,6 +229,7 @@ object FrmBase: TFrmBase
           Stroke.Color = xFF4EBFFA
           Stroke.Thickness = 10.000000000000000000
           StartAngle = -90.000000000000000000
+          EndAngle = -90.000000000000000000
           object FloatArcRotationAngle: TFloatAnimation
             Duration = 2.099999904632568000
             Interpolation = Sinusoidal
@@ -228,7 +241,7 @@ object FrmBase: TFrmBase
           end
           object FloatArcAngle: TFloatAnimation
             Enabled = True
-            Duration = 0.800000011920928900
+            Duration = 0.800000011920929000
             Interpolation = Sinusoidal
             Loop = True
             PropertyName = 'EndAngle'
@@ -249,7 +262,7 @@ object FrmBase: TFrmBase
           TextSettings.VertAlign = Leading
           object FloatTextLoad: TFloatAnimation
             AutoReverse = True
-            Duration = 0.800000011920928900
+            Duration = 0.800000011920929000
             Inverse = True
             Loop = True
             PropertyName = 'Opacity'

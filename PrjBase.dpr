@@ -12,7 +12,8 @@ uses
   UWhatsApp in 'components\UWhatsApp.pas',
   model.EfectTextUP in 'model\model.EfectTextUP.pas',
   UfrmExemple in 'view\UfrmExemple.pas' {FrmExemple},
-  controller.frmExemple in 'controller\controller.frmExemple.pas';
+  controller.frmExemple in 'controller\controller.frmExemple.pas',
+  FMX.StatusBar in 'components\FMX.StatusBar.pas';
 
 {$R *.res}
 

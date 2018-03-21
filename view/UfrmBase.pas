@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.MultiView,System.threading,
   FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts,UInterfaces, FMX.Ani,
   FMX.Effects,{$ifdef Android}AndroidApi.jni.toast,UWhatsapp,{$endif}Controller.FrmBase,
-  FMX.TabControl;
+  FMX.TabControl,Fmx.statusbar;
 
 type
   TFrmBase = class(TForm,IObservable)
@@ -44,6 +44,9 @@ type
     Text3: TText;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+      Shift: TShiftState);
 
   private
     Controller:TControllerFrmBase;
@@ -96,6 +99,26 @@ begin
 Controller.Free;
 end;
 
+procedure TFrmBase.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+  Shift: TShiftState);
+begin
+if key=vkHardwareBack then
+begin
+  if MultiViewMenu.IsShowed = true then
+  begin
+   key:=0;
+
+   MultiViewMenu.HideMaster;
+  end;
+
+end;
+end;
+
+procedure TFrmBase.FormShow(Sender: TObject);
+begin
+Tmywindow.StatusBarColor(self,TAlphaColor($FF50A4FE));
+end;
+
 procedure TFrmBase.HideLoad;
 begin
 Layload.Visible:=false;
@@ -107,6 +130,8 @@ begin
   Toast(Amessage,TToastLength.LongToast);
  {$endif}
 end;
+
+
 
 procedure TFrmBase.ShortToast(AMessage: string);
 begin
@@ -123,6 +148,7 @@ end;
 
 
 initialization
+TMyWindow.init;
 ReportMemoryLeaksOnShutdown:=true;
 
 end.

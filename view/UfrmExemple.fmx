@@ -1,6 +1,6 @@
 inherited FrmExemple: TFrmExemple
   Caption = 'FrmBase1'
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   inherited BgAll: TRectangle
     inherited LayAll: TLayout
       inherited LayCenter: TLayout
@@ -64,13 +64,13 @@ inherited FrmExemple: TFrmExemple
               Margins.Right = 10.000000000000000000
               Margins.Bottom = 3.000000000000000000
               Size.Width = 280.000000000000000000
-              Size.Height = 24.000000000000000000
+              Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
               object Text5: TText
                 Align = Client
                 Margins.Left = 5.000000000000000000
                 Size.Width = 275.000000000000000000
-                Size.Height = 24.000000000000000000
+                Size.Height = 32.000000000000000000
                 Size.PlatformDefault = False
                 Text = 'Click - Me'
                 TextSettings.HorzAlign = Leading
