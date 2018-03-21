@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AppTheme" parent="android:Theme.Material.Light">
+		<item name="android:windowTranslucentStatus">True</item> 
+	    <item name="android:windowTranslucentNavigation">false</item> 
+		<item name="android:windowBackground">@drawable/splash_image_def</item> 
+	    <item name="android:windowNoTitle">true</item> 
+		<item name="android:statusBarColor">@color/colorPrimaryDark</item>
+		<item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+	</style>
+</resources>

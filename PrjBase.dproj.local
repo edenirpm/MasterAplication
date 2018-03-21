@@ -25,6 +25,6 @@
     <Transaction>2018/03/21 15:35:56.818,=C:\Users\edeni\OneDrive\Documentos\GitHub\MasterAplication\components\FMX.StatusBar.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5" Android="0123456789ABCDEF"/>
+		<NoProfile iOSSimulator="iPhone5" Android=""/>
 	</ActiveMobileDevice>
 </BorlandProject>
