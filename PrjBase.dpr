@@ -13,7 +13,11 @@ uses
   model.EfectTextUP in 'model\model.EfectTextUP.pas',
   UfrmExemple in 'view\UfrmExemple.pas' {FrmExemple},
   controller.frmExemple in 'controller\controller.frmExemple.pas',
-  FMX.StatusBar in 'components\FMX.StatusBar.pas';
+  FMX.StatusBar in 'components\FMX.StatusBar.pas',
+  uDao in 'dao\uDao.pas',
+  model.order in 'model\model.order.pas',
+  model.user in 'model\model.user.pas',
+  model.users in 'model\model.users.pas';
 
 {$R *.res}
 

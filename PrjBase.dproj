@@ -333,6 +333,10 @@
         </DCCReference>
         <DCCReference Include="controller\controller.frmExemple.pas"/>
         <DCCReference Include="components\FMX.StatusBar.pas"/>
+        <DCCReference Include="dao\uDao.pas"/>
+        <DCCReference Include="model\model.order.pas"/>
+        <DCCReference Include="model\model.user.pas"/>
+        <DCCReference Include="model\model.users.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

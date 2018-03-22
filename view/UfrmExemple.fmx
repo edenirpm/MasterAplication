@@ -9,6 +9,16 @@ inherited FrmExemple: TFrmExemple
             inherited BgSubTitle: TRectangle
               inherited Text2: TText
                 Text = 'Sample of Inherited Form'
+                object SpeedButton1: TSpeedButton
+                  Align = Right
+                  Position.X = 272.000000000000000000
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 48.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'refreshtoolbutton'
+                  Text = 'SpeedButton1'
+                  OnClick = SpeedButton1Click
+                end
               end
             end
           end
@@ -100,6 +110,27 @@ inherited FrmExemple: TFrmExemple
               TextSettings.FontColor = claCadetblue
               OnClick = Text6Click
             end
+          end
+          object ListView1: TListView
+            ItemAppearanceClassName = 'TDynamicAppearance'
+            ItemEditAppearanceClassName = 'TDynamicAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 320.000000000000000000
+            Size.Height = 195.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+              item
+                AppearanceObjectName = 'Text1'
+                AppearanceClassName = 'TTextObjectAppearance'
+              end>
+            ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+              item
+                AppearanceObjectName = 'Text1'
+                AppearanceClassName = 'TTextObjectAppearance'
+              end>
           end
         end
       end
