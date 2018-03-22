@@ -56,9 +56,9 @@ end;
 
 IOrder = interface
 ['{1A751DF0-5AF6-4782-B56C-91B155679A08}']
- function getOrders(AObject:TObject):IUSer;
- function addOrder(AObject:TObject):IUser;
- function removeOrder(Aindex:integer):IUser;
+ function getOrders(AObject:TObject):IOrder;
+ function addOrder(AObject:TObject):IOrder;
+ function removeOrder(Aindex:integer):IOrder;
  function acceptOrder(AOrder:IOrder):IOrder;
  function declineOrder(AOrder:IOrder):IOrder;
  function finishOrder(AOrder:IOrder):IOrder;
