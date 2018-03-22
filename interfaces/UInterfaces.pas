@@ -26,6 +26,47 @@ IWork = interface
   procedure Execute;
 end;
 
+ILogin = interface
+['{420A60B9-BCA1-4A16-BDD2-48A39973B026}']
+ function isLogged:boolean;overload;
+ function isLogged(auser,apasssword:string):boolean;overload;
+ function Singup(Login,password):Ilogin;
+end;
+
+IService = interface
+['{015E5919-B802-4217-A044-C1FE07135DE0}']
+ function getServices(AObject:TObject):IService;
+ function addService(AObject:TObject):IService;
+ function removeService(Aindex:integer):IService;
+end;
+
+IProfessional = interface
+['{06F68FD2-7B07-4F4B-AA47-3CF750DBF8A5}']
+ function getProfessionals(AObject:TObject):IProfessional;
+ function addProfessional(AObject:TObject):IProfessional;
+ function removeProfessional(Aindex:integer):IProfessional;
+end;
+
+IUser = interface
+['{1EBF6D93-5442-4395-81F0-63CECA271777}']
+ function getUsers(AObject:TObject):IUSer;
+ function addUser(AObject:TObject):IUser;
+ function removeUser(Aindex:integer):IUser;
+end;
+
+IOrder = interface
+['{1A751DF0-5AF6-4782-B56C-91B155679A08}']
+ function getOrders(AObject:TObject):IUSer;
+ function addOrder(AObject:TObject):IUser;
+ function removeOrder(Aindex:integer):IUser;
+ function acceptOrder(AOrder:IOrder):IOrder;
+ function declineOrder(AOrder:IOrder):IOrder;
+ function finishOrder(AOrder:IOrder):IOrder;
+end;
+
+
+
+
 implementation
 
 end.
