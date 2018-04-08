@@ -19,6 +19,15 @@ inherited FrmExemple: TFrmExemple
                   Text = 'SpeedButton1'
                   OnClick = SpeedButton1Click
                 end
+                object SpeedButton2: TSpeedButton
+                  Align = Left
+                  Size.Width = 48.000000000000000000
+                  Size.Height = 48.000000000000000000
+                  Size.PlatformDefault = False
+                  StyleLookup = 'additembutton'
+                  Text = 'SpeedButton2'
+                  OnClick = SpeedButton2Click
+                end
               end
             end
           end
@@ -79,12 +88,23 @@ inherited FrmExemple: TFrmExemple
               object Text5: TText
                 Align = Client
                 Margins.Left = 5.000000000000000000
-                Size.Width = 275.000000000000000000
+                Size.Width = 225.000000000000000000
                 Size.Height = 32.000000000000000000
                 Size.PlatformDefault = False
-                Text = 'Click - Me'
+                Text = 'User Name'
                 TextSettings.HorzAlign = Leading
                 OnClick = Efect
+              end
+              object Text7: TText
+                Align = Right
+                Position.X = 230.000000000000000000
+                Size.Width = 50.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                Text = '+'
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.VertAlign = Leading
+                OnClick = Text7Click
               end
             end
           end
@@ -108,7 +128,6 @@ inherited FrmExemple: TFrmExemple
               Text = 'Execute Work'
               TextSettings.Font.Size = 18.000000000000000000
               TextSettings.FontColor = claCadetblue
-              OnClick = Text6Click
             end
           end
           object ListView1: TListView

@@ -9,6 +9,7 @@ TControllerFrmExemple = class(TInterfacedObject,IWork)
     FAWork: IWork;
     FDao: IDao;
     FDisplay: Tobject;
+    Fusers:TUsers;
     procedure SetAWork(const Value: IWork);
     procedure SetDao(const Value: IDao);
     procedure SetDisplay(const Value: Tobject);
@@ -19,8 +20,10 @@ TControllerFrmExemple = class(TInterfacedObject,IWork)
   property AWork:IWork read FAWork write SetAWork;
   procedure ADisplay(AObject:TObject);
   function Getusers(AEndPoint:string):iwork;
-
+  function UpdateUsers(AEndPoint:string):boolean;
+  procedure adduser(Ausername:string);
   constructor create;
+  destructor destroy;override;
 end;
 implementation
 
@@ -28,6 +31,15 @@ uses
   System.SysUtils;
 
 { TControllerFrmExemple }
+
+procedure TControllerFrmExemple.adduser(Ausername: string);
+var
+user:TUser;
+begin
+  user:=TUSer.Create;
+  user.name:=AUsername;
+  Fusers.users.Add(user);
+end;
 
 procedure TControllerFrmExemple.ADisplay(AObject: TObject);
 begin
@@ -38,6 +50,13 @@ constructor TControllerFrmExemple.create;
 begin
 FAWork:=TWork.Create;
 FDao:=TDao.create;
+FUsers:=TUSers.create;
+end;
+
+destructor TControllerFrmExemple.destroy;
+begin
+FUsers.Free;
+  inherited;
 end;
 
 procedure TControllerFrmExemple.Execute;
@@ -56,6 +75,7 @@ begin
     (Fdisplay as Tlistview).Items.Clear;
     for user in All.users do
     begin
+     adduser(user.name);
      if (FDisplay is TListview) then
      begin
       with (Fdisplay as Tlistview).Items.Add do
@@ -82,6 +102,18 @@ end;
 procedure TControllerFrmExemple.SetDisplay(const Value: Tobject);
 begin
 FDisplay:=Value;
+end;
+
+function TControllerFrmExemple.UpdateUsers(AEndPoint:string): boolean;
+ var
+ all:TUSers;
+begin
+  try
+   all:= FDao.putUsers(AendPoint,FUsers);
+  finally
+   all.DisposeOf;
+  end;
+
 end;
 
 end.

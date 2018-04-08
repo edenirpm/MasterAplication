@@ -21,12 +21,17 @@ type
     Text6: TText;
     ListView1: TListView;
     SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    Text7: TText;
     procedure Text4Click(Sender: TObject);
     procedure Efect(Sender:TObject);
-    procedure Text6Click(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure Text7Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
-
+   Ctrl:TControllerFrmExemple;
     { Private declarations }
   public
     { Public declarations }
@@ -42,6 +47,18 @@ implementation
 procedure TFrmExemple.Efect(Sender: TObject);
 begin
 EfectLabelUP(Sender);
+end;
+
+procedure TFrmExemple.FormCreate(Sender: TObject);
+begin
+  inherited;
+Ctrl:=TControllerFrmExemple.create;
+end;
+
+procedure TFrmExemple.FormDestroy(Sender: TObject);
+begin
+  inherited;
+Ctrl.Free;
 end;
 
 procedure TFrmExemple.SpeedButton1Click(Sender: TObject);
@@ -60,23 +77,24 @@ begin
 
 end;
 
+procedure TFrmExemple.SpeedButton2Click(Sender: TObject);
+begin
+  inherited;
+ Ctrl.UpdateUsers('Users.json');
+end;
+
 procedure TFrmExemple.Text4Click(Sender: TObject);
 begin
   inherited;
  LongToast('Um teste de toast');
 end;
 
-procedure TFrmExemple.Text6Click(Sender: TObject);
-var
- Ctrl:TControllerFrmExemple;
+
+
+procedure TFrmExemple.Text7Click(Sender: TObject);
 begin
   inherited;
- try
-  Ctrl:=TControllerFrmExemple.create;
-  ExecuteWork(Ctrl.AWork);
- finally
-  Ctrl.Free;
- end;
+ Ctrl.adduser(edit1.Text);
 end;
 
 end.
