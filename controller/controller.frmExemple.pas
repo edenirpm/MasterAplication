@@ -34,11 +34,24 @@ uses
 
 procedure TControllerFrmExemple.adduser(Ausername: string);
 var
-user:TUser;
+user,usr:TUser;
 begin
   user:=TUSer.Create;
   user.name:=AUsername;
   Fusers.users.Add(user);
+  with (display as Tlistview)do
+  begin
+    items.Clear;
+    for user in fusers.users do
+    begin
+     with items.Add do
+     begin
+       Data['Text1']:=user.name;
+     end;
+
+    end;
+  end;
+
 end;
 
 procedure TControllerFrmExemple.ADisplay(AObject: TObject);

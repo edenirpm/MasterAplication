@@ -94,6 +94,7 @@ end;
 procedure TFrmExemple.Text7Click(Sender: TObject);
 begin
   inherited;
+ Ctrl.ADisplay(Listview1);
  Ctrl.adduser(edit1.Text);
 end;
 

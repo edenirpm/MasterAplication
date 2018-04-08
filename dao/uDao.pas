@@ -54,11 +54,18 @@ function TDao.getUsers(AEndPoint: string): TUsers;
 var
 user,user2:TUser;
 users:TUsers;
+savelocal:TStringStream;
 begin
  FRestClient.BaseURL:='https://tuder-f5cd8.firebaseio.com/'+AendPoint;
  FRequest.Method:=TRESTRequestMethod.rmGet;
  FRequest.Execute;
  try
+  {optional save a local file}
+  Savelocal:=TStringStream.Create(FResponse.JSONText);
+  Savelocal.SaveToFile('teste.txt');
+  Savelocal.DisposeOf;
+  {end save a local file}
+
   Result:= TJson.JsonToObject<Tusers>(FResponse.JSONText);
  except
   Result:=nil;
