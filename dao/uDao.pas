@@ -61,7 +61,7 @@ begin
  FRequest.Execute;
  try
   {optional save a local file}
-  Savelocal:=TStringStream.Create(FResponse.JSONText);
+  { Savelocal:=TStringStream.Create(FResponse.JSONText);
   Savelocal.SaveToFile('teste.txt');
   Savelocal.DisposeOf;
   {end save a local file}
