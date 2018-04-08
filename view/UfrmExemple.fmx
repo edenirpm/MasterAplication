@@ -128,6 +128,7 @@ inherited FrmExemple: TFrmExemple
               Text = 'Execute Work'
               TextSettings.Font.Size = 18.000000000000000000
               TextSettings.FontColor = claCadetblue
+              OnClick = Text6Click
             end
           end
           object ListView1: TListView

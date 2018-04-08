@@ -30,6 +30,7 @@ type
     procedure Text7Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure Text6Click(Sender: TObject);
   private
    Ctrl:TControllerFrmExemple;
     { Private declarations }
@@ -90,6 +91,12 @@ begin
 end;
 
 
+
+procedure TFrmExemple.Text6Click(Sender: TObject);
+begin
+  inherited;
+Executework(Ctrl.AWork);
+end;
 
 procedure TFrmExemple.Text7Click(Sender: TObject);
 begin
