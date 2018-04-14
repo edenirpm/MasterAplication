@@ -26,6 +26,7 @@ inherited FrmExemple: TFrmExemple
                   Size.PlatformDefault = False
                   StyleLookup = 'additembutton'
                   Text = 'SpeedButton2'
+                  Visible = False
                   OnClick = SpeedButton2Click
                 end
               end

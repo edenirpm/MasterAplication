@@ -81,7 +81,7 @@ end;
 procedure TFrmExemple.SpeedButton2Click(Sender: TObject);
 begin
   inherited;
- Ctrl.UpdateUsers('Users.json');
+ //Ctrl.UpdateUsers('Users.json');
 end;
 
 procedure TFrmExemple.Text4Click(Sender: TObject);
@@ -103,6 +103,8 @@ begin
   inherited;
  Ctrl.ADisplay(Listview1);
  Ctrl.adduser(edit1.Text);
+ Ctrl.UpdateUsers('Users.json');
+ Edit1.Text:='';
 end;
 
 end.

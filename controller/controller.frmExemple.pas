@@ -22,6 +22,7 @@ TControllerFrmExemple = class(TInterfacedObject,IWork)
   function Getusers(AEndPoint:string):iwork;
   function UpdateUsers(AEndPoint:string):boolean;
   procedure adduser(Ausername:string);
+  procedure RefreshDisplay;
   constructor create;
   destructor destroy;override;
 end;
@@ -39,19 +40,7 @@ begin
   user:=TUSer.Create;
   user.name:=AUsername;
   Fusers.users.Add(user);
-  with (display as Tlistview)do
-  begin
-    items.Clear;
-    for user in fusers.users do
-    begin
-     with items.Add do
-     begin
-       Data['Text1']:=user.name;
-     end;
-
-    end;
-  end;
-
+  RefreshDisplay;
 end;
 
 procedure TControllerFrmExemple.ADisplay(AObject: TObject);
@@ -89,17 +78,28 @@ begin
     for user in All.users do
     begin
      adduser(user.name);
-     if (FDisplay is TListview) then
-     begin
-      with (Fdisplay as Tlistview).Items.Add do
-        begin
-         data['Text1']:= user.name;
-        end;
-     end;
     end;
  finally
   All.Disposeof;
  end;
+end;
+
+procedure TControllerFrmExemple.RefreshDisplay;
+var
+user:TUser;
+begin
+with (display as Tlistview)do
+  begin
+    items.Clear;
+    for user in fusers.users do
+    begin
+     with items.Add do
+     begin
+       Data['Text1']:=user.name;
+     end;
+
+    end;
+  end;
 end;
 
 procedure TControllerFrmExemple.SetAWork(const Value: IWork);
@@ -122,6 +122,7 @@ function TControllerFrmExemple.UpdateUsers(AEndPoint:string): boolean;
  all:TUSers;
 begin
   try
+   FDao:=TDao.create;
    all:= FDao.putUsers(AendPoint,FUsers);
   finally
    all.DisposeOf;
