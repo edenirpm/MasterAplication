@@ -152,6 +152,7 @@ inherited FrmExemple: TFrmExemple
                 AppearanceObjectName = 'Text1'
                 AppearanceClassName = 'TTextObjectAppearance'
               end>
+            OnItemClickEx = ListView1ItemClickEx
           end
         end
       end

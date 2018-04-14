@@ -21,6 +21,7 @@ TControllerFrmExemple = class(TInterfacedObject,IWork)
   procedure ADisplay(AObject:TObject);
   function Getusers(AEndPoint:string):iwork;
   function UpdateUsers(AEndPoint:string):boolean;
+  procedure Remove(AIndex:integer);
   procedure adduser(Ausername:string);
   procedure RefreshDisplay;
   constructor create;
@@ -74,7 +75,6 @@ begin
  Result:=self;
  try
     All:=FDao.getUsers(AEndPoint);
-    (Fdisplay as Tlistview).Items.Clear;
     for user in All.users do
     begin
      adduser(user.name);
@@ -100,6 +100,12 @@ with (display as Tlistview)do
 
     end;
   end;
+end;
+
+procedure TControllerFrmExemple.Remove(AIndex: integer);
+begin
+Fusers.users.Delete(AIndex);
+RefreshDisplay;
 end;
 
 procedure TControllerFrmExemple.SetAWork(const Value: IWork);

@@ -31,6 +31,8 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure Text6Click(Sender: TObject);
+    procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
+      const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
   private
    Ctrl:TControllerFrmExemple;
     { Private declarations }
@@ -60,6 +62,14 @@ procedure TFrmExemple.FormDestroy(Sender: TObject);
 begin
   inherited;
 Ctrl.Free;
+end;
+
+procedure TFrmExemple.ListView1ItemClickEx(const Sender: TObject;
+  ItemIndex: Integer; const LocalClickPos: TPointF;
+  const ItemObject: TListItemDrawable);
+begin
+  inherited;
+//  Ctrl.Remove(ItemIndex);
 end;
 
 procedure TFrmExemple.SpeedButton1Click(Sender: TObject);
